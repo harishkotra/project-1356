@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Project 1356</title>
+    <meta name="description" content="1356 days to change your life.">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- ONBOARDING VIEW -->
+        <section id="onboarding-view" class="view">
+            <div class="content-center">
+                <h1 class="logo">1356</h1>
+                <p class="mission-statement">
+                    Before you begin,<br>
+                    define <strong>6 non-negotiable goals</strong>.<br>
+                    You cannot change them once the timer starts.
+                </p>
+                <div id="onboarding-goals" class="onboarding-goals">
+                    <!-- Inputs 1-6 -->
+                    <div class="input-group">
+                        <span class="number">1.</span>
+                        <input type="text" class="setup-input" placeholder="Define Goal 1" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="number">2.</span>
+                        <input type="text" class="setup-input" placeholder="Define Goal 2" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="number">3.</span>
+                        <input type="text" class="setup-input" placeholder="Define Goal 3" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="number">4.</span>
+                        <input type="text" class="setup-input" placeholder="Define Goal 4" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="number">5.</span>
+                        <input type="text" class="setup-input" placeholder="Define Goal 5" required>
+                    </div>
+                    <div class="input-group">
+                        <span class="number">6.</span>
+                        <input type="text" class="setup-input" placeholder="Define Goal 6" required>
+                    </div>
+                </div>
+                <button id="start-btn" class="primary-btn">Begin Project 1356</button>
+            </div>
+        </section>
+
+        <!-- DASHBOARD VIEW -->
+        <section id="dashboard-view" class="view hidden">
+            <div class="top-bar">
+                <div id="quote-display" class="quote"></div>
+            </div>
+
+            <div class="counter-container">
+                <div id="days-remaining" class="huge-number">1356</div>
+                <div class="label">DAYS REMAINING</div>
+            </div>
+
+            <div class="goals-section">
+                <h2>THE 6 PILLARS</h2>
+                <div id="goals-list" class="goals-list">
+                    <!-- Goals injected via JS -->
+                </div>
+            </div>
+
+            <!-- Hidden settings menu removed -->
+        </section>
+
+        <!-- COMPLETION VIEW -->
+        <section id="completion-view" class="view hidden">
+            <div class="content-center">
+                <h1 class="logo">COMPLETE</h1>
+                <p class="final-message">Mission Accomplished.</p>
+                <div class="stats">
+                    <p>You changed your life in</p>
+                    <span id="final-days" class="huge-number-small">0</span>
+                    <p>days.</p>
+                </div>
+                <button id="restart-btn" class="secondary-btn" style="margin-top: 3rem;">Begin Again</button>
+            </div>
+        </section>
+        <!-- INSTALL PROMPT (Hidden by default) -->
+        <div id="install-container" class="install-container hidden">
+            <button id="install-btn" class="secondary-btn">Add to Home Screen</button>
+        </div>
+
+        <!-- GLOBAL FOOTER -->
+        <footer class="app-footer">
+            <p class="privacy-text">
+                Your data stays on this device.<br>
+                No tracking. No accounts. Fully private.
+            </p>
+            <div class="credits">
+                <a href="https://www.youtube.com/watch?v=HHPuA8j8LzU" target="_blank">Inspired by this philosophy</a>
+                <span class="separator">•</span>
+                <a href="https://github.com/harishkotra/project-1356" target="_blank">Open Source</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
