@@ -4,6 +4,8 @@
 
 Project 1356 is a minimalist, offline-first Progressive Web App (PWA) designed to keep you focused on 6 non-negotiable goals.
 
+<img width="1187" height="1272" alt="Screenshot at Jan 06 00-00-15" src="https://github.com/user-attachments/assets/f5d6b237-537d-460b-9599-93487ccb4a4d" />
+
 ## The Philosophy
 
 > "Life is limited. Every single day matters."
@@ -35,7 +37,3 @@ The core concept and philosophy for this app were inspired by this video:
    python3 -m http.server
    ```
 3. Open `http://localhost:8000` in your browser.
-
-## License
-
-Open Source. Feel free to fork and modify for your own journey.
